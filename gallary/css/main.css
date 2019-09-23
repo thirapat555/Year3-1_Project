@@ -1,0 +1,80 @@
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+    margin: 0;
+	height: 100%;
+    width: 100%;
+	background-color: #000000;
+}
+
+.no-js {
+	padding-top: 106px;
+}
+
+.loading {
+	background: url('../img/ico_loading.gif') no-repeat center center;
+}
+
+section {
+	opacity: 0;
+}
+
+.loaded section,
+.no-js section {
+	opacity: 1;
+	transition: opacity 300ms ease-out;
+}
+
+main {
+	overflow-x: hidden;
+}
+
+#preload {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.hsContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('../home-img/bg.jpg')}
+#slide-1 .hsContent {
+	top: auto;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('../home-img/bg2.jpg')}
+#slide-2 .hsContent {
+	margin-left: -450px;
+	top: auto;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('../home-img/bg3.jpg')}
+#slide-3 .hsContent {
+	margin-left: -239px;
+}
+	#slide-3 h2 {
+		color: #f2ead6;
+		background-color: rgba(0,0,0,0.6);
+	}
