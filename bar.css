@@ -1,0 +1,75 @@
+.bar {
+	background-color: rgba(0,0,0,0);
+	position: fixed;
+	background-image: url("home-img/logo2.png");
+	background-size: 250px 60px;
+	background-repeat: no-repeat;
+	top: 0;
+	height: 80px;
+	width: 100%;
+}
+
+.bar a {
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	font-family: colorfont;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	margin-right: 30px;
+	margin-top: 15px;
+}
+/*
+.bar2 {
+	background-color: rgba(0,0,0,0);
+	position: fixed;
+	background-image: url("home-img/logo2.png");
+	background-size: 200px 50px;
+	background-repeat: no-repeat;
+	top: 0;
+	height: 80px;
+	width: 100%;
+}
+
+.bar2 a {
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	font-family: colorfont;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 13px;
+	margin-right: 25px;
+	margin-top: 10px;
+}*/
+
+.click{
+	position: absolute;
+	top: 0;
+	padding: 0;
+	height: 60px;
+	width: 200px;
+	background-color: rgba(0,0,0,0);
+}
+
+
+@media (max-width: 421px){
+
+	.bar a, .bar2 a{
+		padding: 0px 0px;
+		font-size: 10px;
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+
+}
+
+@media (max-width: 550px){
+	.bar , .bar2{
+		background-size: 0px 0px;
+	}
+	.click{
+		display: none;
+	}
+}
